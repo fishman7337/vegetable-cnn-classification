@@ -81,17 +81,22 @@ def main() -> None:
             expected = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
             if not path.exists() or path.read_text(encoding="utf-8") != expected:
                 missing_or_changed.append(str(path))
+        original_copy = output_dir / source_path.name
+        if not original_copy.exists() or original_copy.read_bytes() != source_path.read_bytes():
+            missing_or_changed.append(str(original_copy))
         if missing_or_changed:
             raise SystemExit("Notebook split output is stale: " + ", ".join(missing_or_changed))
         return
 
-    original_dir = output_dir / "original"
-    original_dir.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source_path, original_dir / source_path.name)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source_path, output_dir / source_path.name)
 
     expected_filenames = set(notebooks)
     for existing_notebook in output_dir.glob("*.ipynb"):
-        if existing_notebook.name not in expected_filenames:
+        if (
+            existing_notebook.name not in expected_filenames
+            and existing_notebook.name != source_path.name
+        ):
             existing_notebook.unlink()
 
     for filename, notebook in notebooks.items():

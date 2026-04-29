@@ -2,7 +2,7 @@
 
 ## Preserved Original
 
-`DELE_CA1_A.ipynb` is the original CA1 notebook and remains at the repository root. A copy is also stored in `notebooks/original/`.
+`DELE_CA1_A.ipynb` is the original CA1 notebook and remains at the repository root. A direct copy is also stored in `notebooks/DELE_CA1_A.ipynb`.
 
 ## Split Notebooks
 
