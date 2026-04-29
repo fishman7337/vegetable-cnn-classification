@@ -1,0 +1,51 @@
+# Local environments
+.env
+.venv/
+venv/
+env/
+ENV/
+*.py[cod]
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Notebook/runtime caches
+.ipynb_checkpoints/
+keras_tuner/
+wandb/
+mlruns/
+
+# Dataset and generated artifacts
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/README.md
+artifacts/
+reports/figures/*
+!reports/figures/.gitkeep
+!reports/figures/README.md
+
+# Model outputs
+models/*
+!models/.gitkeep
+!models/README.md
+Weights/
+Tunings/
+*.h5
+*.keras
+*.weights.h5
+*.onnx
+*.tflite
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

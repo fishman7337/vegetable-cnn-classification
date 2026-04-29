@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vegetable-vision-cnn"
+version = "0.1.0"
+description = "MLOps-ready CNN project for vegetable image classification."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Goh Kun Ming" }
+]
+keywords = ["computer-vision", "cnn", "deep-learning", "keras", "mlops"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Education",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "scikit-learn>=1.4",
+  "matplotlib>=3.8",
+  "seaborn>=0.13",
+  "opencv-python>=4.9",
+  "plotly>=5.22",
+  "python-dotenv>=1.0"
+]
+
+[project.optional-dependencies]
+ml = [
+  "tensorflow>=2.16,<2.19",
+  "keras-tuner>=1.4",
+  "visualkeras>=0.1.4",
+  "pydot>=2.0"
+]
+notebook = [
+  "jupyter>=1.0",
+  "nbformat>=5.10",
+  "ipykernel>=6.29"
+]
+dev = [
+  "pytest>=8.2",
+  "pytest-cov>=5.0",
+  "ruff>=0.6.0",
+  "bandit[toml]>=1.7.9",
+  "pip-audit>=2.7"
+]
+
+[project.scripts]
+vegetable-vision-train = "vegetable_vision.train:main"
+vegetable-vision-evaluate = "vegetable_vision.evaluate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+addopts = "-q --strict-markers --strict-config"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["src/vegetable_vision"]
+branch = true
+
+[tool.bandit]
+exclude_dirs = ["tests", "notebooks"]
+skips = ["B101"]

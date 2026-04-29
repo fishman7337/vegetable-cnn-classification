@@ -1,0 +1,2 @@
+# Developer, test, and security tooling.
+-e .[dev,notebook]

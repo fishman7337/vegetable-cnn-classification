@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Vegetable Vision CNN"
+message: "If you reference this academic project, please cite it using this metadata."
+type: software
+authors:
+  - family-names: "Goh"
+    given-names: "Kun Ming"
+repository-code: "https://github.com/fishman7337/vegetable-cnn-classification"
+abstract: "MLOps-ready CNN project for vegetable image classification based on Singapore Polytechnic ST1504 Deep Learning CA1 Part A."
+keywords:
+  - deep learning
+  - convolutional neural network
+  - vegetable classification
+  - mlops
+license: "NOASSERTION"

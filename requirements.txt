@@ -1,0 +1,2 @@
+# Runtime dependencies for reproducing the notebook and training locally.
+-e .[ml,notebook]

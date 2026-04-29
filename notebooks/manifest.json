@@ -1,0 +1,78 @@
+{
+  "source_notebook": "DELE_CA1_A.ipynb",
+  "strip_outputs": true,
+  "section_count": 10,
+  "source_cell_count": 1230,
+  "sections": [
+    {
+      "filename": "00_project_overview.ipynb",
+      "title": "Project Overview",
+      "original_start_cell": 0,
+      "original_end_cell": 0,
+      "cell_count": 1
+    },
+    {
+      "filename": "01_importing_of_libraries.ipynb",
+      "title": "Importing of Libraries",
+      "original_start_cell": 1,
+      "original_end_cell": 4,
+      "cell_count": 4
+    },
+    {
+      "filename": "02_loading_of_dataset.ipynb",
+      "title": "Loading of Dataset",
+      "original_start_cell": 5,
+      "original_end_cell": 14,
+      "cell_count": 10
+    },
+    {
+      "filename": "03_data_analysis_and_visualisations.ipynb",
+      "title": "Data Analysis & Visualisations",
+      "original_start_cell": 15,
+      "original_end_cell": 72,
+      "cell_count": 58
+    },
+    {
+      "filename": "04_model_training_for_23px_by_23px_no_augmentation.ipynb",
+      "title": "Model Training For 23px by 23px (No Augmentation)",
+      "original_start_cell": 73,
+      "original_end_cell": 354,
+      "cell_count": 282
+    },
+    {
+      "filename": "05_model_training_for_23px_by_23px_with_data_augmentation.ipynb",
+      "title": "Model Training For 23px by 23px (With Data Augmentation)",
+      "original_start_cell": 355,
+      "original_end_cell": 636,
+      "cell_count": 282
+    },
+    {
+      "filename": "06_model_training_for_101px_by_101px_no_augmentation.ipynb",
+      "title": "Model Training For 101px by 101px (No Augmentation)",
+      "original_start_cell": 637,
+      "original_end_cell": 918,
+      "cell_count": 282
+    },
+    {
+      "filename": "07_model_training_for_101px_by_101px_with_data_augmentation.ipynb",
+      "title": "Model Training For 101px by 101px (With Data Augmentation)",
+      "original_start_cell": 919,
+      "original_end_cell": 1201,
+      "cell_count": 283
+    },
+    {
+      "filename": "08_overall_model_evaluation.ipynb",
+      "title": "Overall Model Evaluation",
+      "original_start_cell": 1202,
+      "original_end_cell": 1227,
+      "cell_count": 26
+    },
+    {
+      "filename": "09_bibliographies.ipynb",
+      "title": "Bibliographies",
+      "original_start_cell": 1228,
+      "original_end_cell": 1229,
+      "cell_count": 2
+    }
+  ]
+}
