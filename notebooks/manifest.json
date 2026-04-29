@@ -1,5 +1,5 @@
 {
-  "source_notebook": "DELE_CA1_A.ipynb",
+  "source_notebook": "notebooks/DELE_CA1_A.ipynb",
   "strip_outputs": true,
   "section_count": 10,
   "source_cell_count": 1230,

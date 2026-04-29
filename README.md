@@ -2,7 +2,7 @@
 
 An MLOps-ready convolutional neural network project for vegetable image classification, rebuilt from the original ST1504 Deep Learning CA1 notebook into a cleaner repository structure with reusable Python modules, tests, security checks, and documentation.
 
-The original notebook remains preserved as `DELE_CA1_A.ipynb` and is also copied directly to `notebooks/DELE_CA1_A.ipynb`. Source-preserving split notebooks are generated under `notebooks/` to make review and maintenance easier.
+The original notebook is preserved at `notebooks/DELE_CA1_A.ipynb`. Source-preserving split notebooks are also generated under `notebooks/` to make review and maintenance easier.
 
 ## Academic Context
 
@@ -20,8 +20,7 @@ This project was completed under Singapore Polytechnic, School of Computing, Dip
 
 ```text
 .
-|-- DELE_CA1_A.ipynb                 # Original notebook, kept intact
-|-- notebooks/                       # Split notebook sections and manifest
+|-- notebooks/                       # Original notebook, split notebook sections, and manifest
 |-- src/vegetable_vision/            # Reusable package code
 |-- tests/                           # Pytest suite for config, data, and notebook tooling
 |-- data/                            # Local dataset placeholders, ignored by git
@@ -75,7 +74,7 @@ The monolithic notebook has been split by numbered top-level sections:
 python scripts/split_notebook.py
 ```
 
-The split notebooks intentionally strip execution outputs to keep diffs readable. The original notebook remains unchanged at the repository root and is copied to `notebooks/DELE_CA1_A.ipynb`.
+The split notebooks intentionally strip execution outputs to keep diffs readable. The original notebook remains unchanged at `notebooks/DELE_CA1_A.ipynb`.
 
 To verify the split notebooks are current:
 

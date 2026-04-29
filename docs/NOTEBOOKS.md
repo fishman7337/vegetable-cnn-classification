@@ -2,7 +2,7 @@
 
 ## Preserved Original
 
-`DELE_CA1_A.ipynb` is the original CA1 notebook and remains at the repository root. A direct copy is also stored in `notebooks/DELE_CA1_A.ipynb`.
+`notebooks/DELE_CA1_A.ipynb` is the original CA1 notebook.
 
 ## Split Notebooks
 
@@ -26,7 +26,7 @@ The original notebook already preserves the executed outputs. The generated note
 
 ## Editing Guidance
 
-If the academic submission needs to stay historically accurate, do not edit `DELE_CA1_A.ipynb`. Make future improvements in:
+If the academic submission needs to stay historically accurate, do not edit `notebooks/DELE_CA1_A.ipynb`. Make future improvements in:
 
 - `src/vegetable_vision/`
 - `tests/`

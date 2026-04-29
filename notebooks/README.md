@@ -1,6 +1,6 @@
 # Notebooks
 
-This folder contains generated notebook sections derived from `DELE_CA1_A.ipynb`.
+This folder contains the original notebook and generated section notebooks derived from it.
 
 - `DELE_CA1_A.ipynb`: exact copy of the original notebook.
 - `manifest.json`: mapping from generated notebooks back to original cell ranges.

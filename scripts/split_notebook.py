@@ -20,7 +20,7 @@ from vegetable_vision.notebooks import (  # noqa: E402
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, default=Path("DELE_CA1_A.ipynb"))
+    parser.add_argument("--source", type=Path, default=Path("notebooks/DELE_CA1_A.ipynb"))
     parser.add_argument("--output-dir", type=Path, default=Path("notebooks"))
     parser.add_argument("--keep-outputs", action="store_true")
     parser.add_argument("--check", action="store_true", help="Verify generated files are current.")
@@ -36,7 +36,7 @@ def expected_payload(
     strip_outputs = not args.keep_outputs
 
     manifest = {
-        "source_notebook": str(source_path),
+        "source_notebook": source_path.as_posix(),
         "strip_outputs": strip_outputs,
         "section_count": len(sections),
         "source_cell_count": len(source_notebook.get("cells", [])),
@@ -89,7 +89,9 @@ def main() -> None:
         return
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source_path, output_dir / source_path.name)
+    original_copy = output_dir / source_path.name
+    if source_path.resolve() != original_copy.resolve():
+        shutil.copy2(source_path, original_copy)
 
     expected_filenames = set(notebooks)
     for existing_notebook in output_dir.glob("*.ipynb"):

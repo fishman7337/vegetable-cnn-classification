@@ -17,7 +17,7 @@ The repository is documented as **Vegetable Vision CNN**. The name keeps the ori
 
 ## Original Work
 
-The original submission notebook is retained as `DELE_CA1_A.ipynb`. It includes the full narrative, experiments, model comparison, training outputs, and evaluation discussion from the CA1 work.
+The original submission notebook is retained as `notebooks/DELE_CA1_A.ipynb`. It includes the full narrative, experiments, model comparison, training outputs, and evaluation discussion from the CA1 work.
 
 ## Repository Modernization
 
