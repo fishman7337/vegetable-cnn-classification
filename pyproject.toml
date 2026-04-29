@@ -34,7 +34,7 @@ dependencies = [
 
 [project.optional-dependencies]
 ml = [
-  "tensorflow>=2.16,<2.19",
+  "tensorflow>=2.16,<2.22",
   "keras-tuner>=1.4",
   "visualkeras>=0.1.4",
   "pydot>=2.0"
