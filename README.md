@@ -129,6 +129,10 @@ GitHub Actions also runs pytest, Ruff, Bandit, dependency auditing, notebook int
 - [Architecture notes](docs/ARCHITECTURE.md)
 - [CI and security](docs/CI_SECURITY.md)
 
+## License
+
+This project is released under the [MIT License](LICENSE.md).
+
 ## Status
 
 This repository is an academic deep learning project that has been reorganized for maintainability. The code and tests validate repository tooling and reusable helpers, but full model reproduction still requires the original dataset and suitable GPU/Colab compute.

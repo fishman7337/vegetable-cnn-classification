@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "MLOps-ready CNN project for vegetable image classification."
 readme = "README.md"
 requires-python = ">=3.10"
+license = { text = "MIT" }
 authors = [
   { name = "Goh Kun Ming" }
 ]
@@ -15,6 +16,7 @@ keywords = ["computer-vision", "cnn", "deep-learning", "keras", "mlops"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Education",
+  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
